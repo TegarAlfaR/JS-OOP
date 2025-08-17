@@ -9,20 +9,18 @@
 
 <body>
     <script>
-        function Person() {
-            this.firstName = "",
-                this.lastName = "",
+        function Person(firstName, lastName) {
+            this.firstName = firstName,
+                this.lastName = lastName,
                 this.sayHello = function (name) {
                     console.info(`hello ${name} my name is ${this.firstName}`)
                 }
         }
 
-        const tegar = new Person()
-        tegar.firstName = "Tegar"
-        tegar.lastName = "Rizzi"
+        const tegar = new Person("tegar", "rizzi")
         tegar.sayHello("cihuy")
 
-        const budi = new Person()
+        const budi = new Person("budi", "cihuy")
 
         console.log(tegar)
         console.log(budi)

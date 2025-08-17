@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Employe(firstName) {
+            this.firstName = firstName,
+                this.sayHello = function (name) {
+                    console.log(`hello ${name} my name is ${firstName}`)
+                }
+        }
+
+        function Manager(firstName, lastName) {
+            Employe.call(this, firstName)
+            this.lastName = lastName
+        }
+
+        const tegar = new Manager("tegar", "rizzi")
+        console.info(tegar)
+    </script>
+</body>
+
+</html>
