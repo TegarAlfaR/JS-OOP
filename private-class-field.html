@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Counter {
+            #counter = 0
+
+            increment() {
+                this.#counter++
+            }
+
+            decrement() {
+                this.#counter--
+            }
+
+            get() {
+                return this.#counter
+            }
+        }
+
+        const hitung = new Counter
+
+        console.log(hitung.get())
+        hitung.increment()
+        hitung.increment()
+        hitung.increment()
+        hitung.decrement()
+        console.log(hitung.get())
+    </script>
+</body>
+
+</html>
