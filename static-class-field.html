@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Configuratuion {
+            static name = "Tegar"
+            static version = 1.1
+            static author = "Tegar"
+        }
+
+        const config = new Configuratuion()
+        console.info(config)
+        console.info(config.name) // ini ngga akan bisa harus kek gini
+        console.info(Configuratuion.name)
+    </script>
+</body>
+
+</html>
